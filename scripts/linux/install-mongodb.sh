@@ -13,5 +13,5 @@ sudo apt-get update -y
 sudo apt-get install mongodb-org mongodb-org-server mongodb-org-shell mongodb-org-tools -y
 
 # Restart mongodb
-sudo stop mongod || :
-sudo start mongod
+sudo service mongod stop || :
+sudo service mongod start
